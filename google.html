@@ -1,0 +1,65 @@
+<html>
+<head>
+  
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <title>signup-form</title>
+</head>
+<body class="grey lighten-3"">
+
+
+  <!-- <h4 style="text-align: center;">Sign up</h4><br />
+  <form id="signup-form" style="width: 76%;padding-left: 34%;">
+  
+    <div class="input-field">
+      <input type="email" id="signup-email" required />
+      <label >Email address:</label>
+      
+    </div>
+    <div class="input-field">
+      <input type="password" id="signup-password" required />
+      <label >Choose password</label>
+
+    </div>
+    <button class="btn danger">Sign up</button>
+   
+  </form> -->
+  <button onclick="signup();">Google Signup</button>
+
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.19.0/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-auth.js"></script>
+
+
+
+
+
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAwbosxAvNcOGVZBXut-twjsbNR6Me8FcU",
+    authDomain: "project-8348923417279538226.firebaseapp.com",
+    databaseURL: "https://project-8348923417279538226.firebaseio.com",
+    projectId: "project-8348923417279538226",
+    storageBucket: "project-8348923417279538226.appspot.com",
+    messagingSenderId: "902566706399",
+    appId: "1:902566706399:web:7f873ac81de6b2a7457d6a",
+    measurementId: "G-LXBE1V8RYE"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const auth=firebase.auth() 
+  // firebase.analytics();
+</script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="google.js"></script>
+  <!-- <script src="/__/firebase/init.js"></script> -->
+  <!-- <script src="scripts/login.js"></script> -->
+</body>
+</html>
